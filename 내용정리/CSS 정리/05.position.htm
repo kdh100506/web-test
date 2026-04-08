@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        <p class="a1">a1</p>
+        <p class="a2">a2</p>
+        <p class="a3">a3</p>
+    </div>
+    <div class="box2">
+        <p class="b1">b1</p>
+        <p class="b2">b2</p>
+        <p class="b3">b3</p>
+    </div>
+    <div class="box3">fosition-fixd</div>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box1{background-color: #fc6 ;}
+        .box1 p{width: 100px; height: 100px; background-color: skyblue;}
+        .box1 .a2{position:relative; top: 0; left: 100px;}
+        .box2{position:relative; background-color: #fcc ;}
+        .box2 p{width: 100px; height: 100px; background-color: skyblue;}
+        .box2 .b2{position:absolute; top: 100; left: 100; }
+        .box3{background-color: red; width: 100px; height: 100px; position:fixed; bottom:0; right:0;}
+    </style>
+</body>
+</html>

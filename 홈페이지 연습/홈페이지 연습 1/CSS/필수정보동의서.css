@@ -1,0 +1,61 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#410dff,#cc2afd);
+}
+
+.white_background{
+    background: white; 
+    width: 800px;
+    height: 600px;
+    text-align: left;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.page_all{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.page_left{
+    flex: 1;
+    text-align: left;
+    border-right: 2px solid #000000;
+    border-top: 2px solid#000000;
+    padding-right: 20px;
+}
+
+.page_right{
+    flex: 1;
+    text-align: left;
+    border-top: 2px solid#000000;
+    padding-left: 20px;
+}
+
+.button_box{
+    text-align: center; /* 가로 중앙 정렬 */
+    margin-top: 30px;   /* 문장과의 간격 */
+}
+
+
+.button{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(135deg,#410dff,#cc2afd);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posefix Dashboard - Beginner Friendly</title>
+    <style>
+        /* --- 1. 기본 스타일 리셋 (초보자 필수!) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Malgun Gothic', sans-serif; /* 깔끔한 기본 서체 */
+        }
+
+        body {
+            background-color: #f4f7f6; /* 아주 연한 회색 배경 (고급짐의 비밀) */
+            color: #333;
+            padding: 20px;
+        }
+
+        /* --- 2. 대시보드 전체 컨테이너 --- */
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto; /* 중앙 정렬 */
+            display: flex;
+            gap: 20px; /* 요약 섹션과 메인 섹션 사이 간격 */
+        }
+
+        /* --- 3. 왼쪽 요약 섹션 (칼로리 + 공지사항) --- */
+        .summary-section {
+            flex: 1; /* 전체 너비의 약 1/4 차지 */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* 공통 카드 스타일 */
+        .card {
+            background: white;
+            border-radius: 15px; /* 모서리 둥글게 */
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 은은한 그림자 */
+            transition: transform 0.2s ease; /* 마우스 오버 효과용 */
+        }
+
+        /* 마우스 올렸을 때 살짝 떠오르는 효과 (선택사항) */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 칼로리 카드 전용 */
+        .calorie-card {
+            background-color: #6c5ce7; /* 포인트 보라색 배경 */
+            color: white;
+            text-align: center;
+        }
+
+        .calorie-card h3 {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .calorie-number {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .calorie-unit {
+            font-size: 1.2rem;
+            margin-left: 5px;
+        }
+
+        /* 공지사항 카드 전용 */
+        .notice-card h3 {
+            color: #6c5ce7;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .notice-list {
+            list-style: none;
+        }
+
+        .notice-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+        }
+
+        .notice-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* --- 4. 오른쪽 메인 메뉴 그리드 --- */
+        .main-menu-section {
+            flex: 3; /* 전체 너비의 약 3/4 차지 */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4열 격자 */
+            gap: 20px; /* 카드 사이 간격 */
+        }
+
+        /* 메인 메뉴 카드 내부 스타일 */
+        .menu-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 180px; /* 카드 높이 고정 */
+            cursor: pointer;
+        }
+
+        .menu-icon {
+            font-size: 2.5rem; /* 아이콘 크기 (임시로 글자 아이콘 사용) */
+            margin-bottom: 15px;
+            color: #6c5ce7; /* 아이콘 색상 */
+        }
+
+        .menu-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            color: #444;
+        }
+
+        /* 반응형 디자인 (화면이 작아지면 2열로 변경) */
+        @media (max-width: 900px) {
+            .main-menu-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="summary-section">
+            <div class="card calorie-card">
+                <h3>오늘 소모한 칼로리</h3>
+                <div class="calorie-number">320<span class="calorie-unit">kcal</span> 🔥</div>
+            </div>
+
+            <div class="card notice-card">
+                <h3>공지사항</h3>
+                <ul class="notice-list">
+                    <li>📢 프로모션 운동시설 확대 안내</li>
+                    <li>🆕 배틀모드 4인용 출시 및 랭킹 도입</li>
+                    <li>💡 NEW 기능 응모전 안내</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-menu-section">
+            <div class="card menu-card">
+                <div class="menu-icon">👤</div> <div class="menu-title">자세 교정 &<br>피드백</div>
+            </div>
+            
+            <div class="card menu-card">
+                <div class="menu-icon">🏋️‍♂️</div>
+                <div class="menu-title">운동 시설 추천</div>
+            </div>
+
+            <div class="card menu-card">
+                <div class="menu-icon">⌚</div>
+                <div class="menu-title">외부 기기 연동</div>
+            </div>
+
+            <div class="card menu-card">
+                <div class="menu-icon">📊</div>
+                <div class="menu-title">성장 리포트</div>
+            </div>
+
+            <div class="card menu-card">
+                <div class="menu-icon">📋</div>
+                <div class="menu-title">운동 루틴 추천</div>
+            </div>
+
+            <div class="card menu-card">
+                <div class="menu-icon">🖥️</div>
+                <div class="menu-title">REPLAY 분석</div>
+            </div>
+
+            <div class="card menu-card">
+                <div class="menu-icon">⚔️</div>
+                <div class="menu-title">배틀 모드</div>
+            </div>
+
+            <div class="card menu-card">
+                <div class="menu-icon">🎁</div>
+                <div class="menu-title">프로모션</div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

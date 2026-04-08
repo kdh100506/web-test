@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* 1. 스위치의 전체 외곽 */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+  }
+
+  /* 2. 실제 체크박스는 숨기기 */
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* 3. 배경 슬라이더 (OFF 상태) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  /* 4. 슬라이더 안의 하얀 원 */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  /* 5. 체크되었을 때(ON)의 배경색 */
+  input:checked + .slider {
+    background-color: #4cd137;
+  }
+
+  /* 6. 체크되었을 때(ON) 원의 이동 */
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+</style>
+</head>
+<body>
+
+  <h2>Checkbox Toggle Switch</h2>
+
+  <label class="toggle-switch">
+    <input type="checkbox" id="myCheckbox">
+    <span class="slider"></span>
+  </label>
+
+  <p>현재 상태: <span id="state-text" style="font-weight:bold; color:gray;">OFF</span></p>
+
+  <script>
+    // 상태 변화를 텍스트로 보여주는 간단한 스크립트
+    const checkbox = document.getElementById('myCheckbox');
+    const stateText = document.getElementById('state-text');
+
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        stateText.innerText = "ON";
+        stateText.style.color = "#4cd137";
+      } else {
+        stateText.innerText = "OFF";
+        stateText.style.color = "gray";
+      }
+    });
+  </script>
+
+</body>
+</html>

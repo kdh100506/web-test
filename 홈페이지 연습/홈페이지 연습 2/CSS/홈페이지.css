@@ -1,0 +1,76 @@
+.header{
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.logo{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.header_nav_1{
+    float: left;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header_nav_1 .nav{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.header_nav_1 .nav:hover{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #2542fa;
+    font-size: 20px;
+}
+
+.header_nav_2{
+    float: right;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header_nav_2 .nav{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #2860a4;
+    font-size: 20px;
+}
+
+.header_nav_2 .nav:hover{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: underline;
+    color: #2860a4;
+    font-size: 20px;
+}
+
+.header_nav_2 div{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid #2860a4;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.header_nav_2 div:hover{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 2px solid #2860a4;
+    border-radius: 10px;
+    margin-left: 20px;
+}
