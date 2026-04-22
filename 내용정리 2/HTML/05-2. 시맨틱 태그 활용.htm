@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 시멘틱 태그 예시 페이지</title>
+  </head>
+  <body>
+    <header>
+      <h1>나의 기술 블로그</h1>
+      <p>최신 IT 트렌드와 코딩 지식을 공유합니다.</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#home">홈</a></li>
+        <li><a href="#articles">포스트</a></li>
+        <li><a href="#contact">연락처</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="articles">
+        <h2>최신 게시글</h2>
+
+        <article>
+          <h3>HTML5 시멘틱 태그의 중요성</h3>
+          <p>시멘틱 태그를 사용하면 브라우저와 개발자가 코드의 의미를 쉽게 파악할 수 있습니다. 예를 들어, <mark>검색 엔진 최적화(SEO)</mark>에도 큰 도움이 됩니다.</p>
+
+          <p>발행일: <time datetime="2026-04-18">2026년 4월 18일</time></p>
+
+          <figure>
+            <img src="html5-structure.png" alt="HTML5 구조도" width="400" />
+            <figcaption>[그림 1] HTML5의 기본적인 문서 구조</figcaption>
+          </figure>
+
+          <details>
+            <summary>시멘틱 태그 리스트 더보기</summary>
+            <ul>
+              <li>header, footer, nav</li>
+              <li>article, section, main</li>
+              <li>aside, figure, mark 등</li>
+            </ul>
+          </details>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h3>인기 키워드</h3>
+      <ul>
+        <li>#HTML5</li>
+        <li>#CSS3</li>
+        <li>#JavaScript</li>
+      </ul>
+    </aside>
+
+    <footer>
+      <p>&copy; 2026 My Tech Blog. All rights reserved.</p>
+      <p>문의: contact@example.com</p>
+    </footer>
+  </body>
+</html>

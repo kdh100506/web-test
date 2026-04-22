@@ -1,53 +1,58 @@
 <style>
-/* 스위치 전체 컨테이너 */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
+  /* 스위치 전체 컨테이너 */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
 
-/* 기본 체크박스 숨기기 */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+  /* 기본 체크박스 숨기기 */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
-/* 슬라이더 (배경) */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #ccc;
-  transition: .4s;
-  border-radius: 34px;
-}
+  /* 슬라이더 (배경) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
 
-/* 슬라이더 내부의 동그라미 */
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px; width: 26px;
-  left: 4px; bottom: 4px;
-  background-color: white;
-  transition: .4s;
-  border-radius: 50%;
-}
+  /* 슬라이더 내부의 동그라미 */
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
 
-/* 체크되었을 때(ON) 배경색 */
-input:checked + .slider {
-  background-color: #2196F3;
-}
+  /* 체크되었을 때(ON) 배경색 */
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
 
-/* 체크되었을 때(ON) 동그라미 이동 */
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
+  /* 체크되었을 때(ON) 동그라미 이동 */
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
 </style>
 
 <label class="switch">
-  <input type="checkbox" id="onoff">
+  <input type="checkbox" id="onoff" />
   <span class="slider"></span>
 </label>
 
@@ -58,6 +63,6 @@ input:checked + .slider:before {
   const statusText = document.getElementById('status');
 
   check.addEventListener('change', () => {
-    statusText.innerText = check.checked ? "ON" : "OFF";
+    statusText.innerText = check.checked ? 'ON' : 'OFF';
   });
 </script>

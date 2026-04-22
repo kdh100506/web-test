@@ -1,280 +1,349 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="kr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POSEFIX</title>
-  <link rel="stylesheet" href="../CSS/POSEFIX-메인-홈페이지.css">
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-
-</head>
-<body>
-  <header>
-    <a class="logo" href="POSEFIX-메인-홈페이지.htm">POSE<span class="logo_2">FIX</span></a>
-    <nav>
-      <a href="POSEFIX-로그인.htm">로그인</a>
-      <a href="POSEFIX-회원가입.htm">회원가입</a>
-    </nav>
-  </header>
-  <main>
-    <div style="float: left; margin-right: 10px;">
-      <div class="kcal_used">
-        <b>오늘 소모한 칼로리<br><b class="kcal">320kacl</b></b>
-      </div>
-      <div class="notification">
-        <div class="notification_header">
-          <p class="notification_title">공지사항</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSEFIX</title>
+    <link rel="stylesheet" href="../CSS/POSEFIX-메인-홈페이지.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="POSEFIX-메인-홈페이지.htm"
+        >POSE<span class="logo_2">FIX</span></a
+      >
+      <nav>
+        <a href="POSEFIX-로그인.htm">로그인</a>
+        <a href="POSEFIX-회원가입.htm">회원가입</a>
+      </nav>
+    </header>
+    <main>
+      <div style="float: left; margin-right: 10px">
+        <div class="kcal_used">
+          <b>오늘 소모한 칼로리<br /><b class="kcal">320kacl</b></b>
         </div>
-        <div class="notification_body">
-          <br>
-          <div class="notification_list">
-            <a href="#">프로모션 운동시설 확대 안내</a>
+        <div class="notification">
+          <div class="notification_header">
+            <p class="notification_title">공지사항</p>
           </div>
-          <br>
-          <div class="notification_list">
-            <a href="#">배틀모드 4인용 출시 및 랭킹 시스템 도입</a>
-          </div>
-          <br>
-          <div class="notification_list">
-            <a href="#">NEW 기능 응모전 안내</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="function_menu">
-      <div>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>자세 교정&피드백</p>
-              <img src="../IMG/free-icon-feedback-4658943.png">
+          <div class="notification_body">
+            <br />
+            <div class="notification_list">
+              <a href="#">프로모션 운동시설 확대 안내</a>
+            </div>
+            <br />
+            <div class="notification_list">
+              <a href="#">배틀모드 4인용 출시 및 랭킹 시스템 도입</a>
+            </div>
+            <br />
+            <div class="notification_list">
+              <a href="#">NEW 기능 응모전 안내</a>
             </div>
           </div>
-        </a>
-        <a href="#">
-        <div class="function_menu_list">
+        </div>
+      </div>
+      <div class="function_menu">
+        <div>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>자세 교정&피드백</p>
+                <img src="../IMG/free-icon-feedback-4658943.png" />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>운동 루틴 추천</p>
+                <img src="../IMG/free-icon-exercise-routine-12646151.png" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>운동 시설 추천</p>
+                <img src="../IMG/free-icon-gym-2801710.png" />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>REPLAY 분석</p>
+                <img src="../IMG/free-icon-var-replay-7807588.png" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>외부 기기 연동</p>
+                <img src="../IMG/free-icon-data-synchronization-7440391.png" />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>배틀 모드</p>
+                <img src="../IMG/free-icon-versus-7960348.png" />
+              </div>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>성장 리포트</p>
+                <img src="../IMG/free-icon-data-report-2763407.png" />
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="function_menu_list">
+              <div>
+                <p>프로모션</p>
+                <img src="../IMG/free-icon-coupon-8633496.png" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="menu_bar">
+        <nav>
+          <button class="menu_bar_button" onclick="toggleBlind_chatting()">
+            <i class="fi fi-sr-envelope"></i>
+          </button>
+          <button class="menu_bar_button" onclick="toggleBlind_setting()">
+            <i class="fi fi-sr-settings"></i>
+          </button>
+          <button class="menu_bar_button" onclick="toggleBlind_home()">
+            <i class="fi fi-sr-home"></i>
+          </button>
+          <button class="menu_bar_button" onclick="toggleBlind_profile()">
+            <i class="fi fi-sr-user"></i>
+          </button>
+          <button class="menu_bar_button" onclick="toggleBlind_menu_burger()">
+            <i class="fi fi-br-menu-burger"></i>
+          </button>
+        </nav>
+      </div>
+      <div id="blindSetting">
+        <p class="setting_title">설정</p>
+        <div class="setting_list">
           <div>
-            <p>운동 루틴 추천</p>
-            <img src="../IMG/free-icon-exercise-routine-12646151.png">
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">다크모드</p>
+                <p>눈의 피로도가 줄어듭니다.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div>
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">알림</p>
+                <p>POSEFIX의 소식을 실시간으로 알수 있습니다.</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+          <div>
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">텍스트 크기</p>
+                <p>텍스트의 크기를 조절해 줍니다.</p>
+              </div>
+              <input
+                type="number"
+                max="10"
+                min="0"
+                value="5"
+                class="text_setting"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">데이터 관리</p>
+                <p>캐시 삭제 및 클라우드를 동기화 합니다.</p>
+              </div>
+              <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
+            </div>
+          </div>
+          <div>
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">언어 설정</p>
+                <p>앱 언어를 변경합니다 (현재 : 한국어)</p>
+              </div>
+              <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
+            </div>
+          </div>
+          <div>
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">보안 설정</p>
+                <p>비밀번호 및 생체 인식 관리</p>
+              </div>
+              <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
+            </div>
+          </div>
+          <div>
+            <div class="setting_option">
+              <div>
+                <p class="setting_name">권한 설정</p>
+                <p>사용할수 있는 권한을 설정 합니다.</p>
+              </div>
+              <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
+            </div>
           </div>
         </div>
-        </a>
       </div>
+      <div id="blindChatting">
+        <p class="chatting_title">내부 메신저</p>
+        <nav>
+          <button class="function_button">
+            <i class="fi fi-sr-user-add"></i> 연락처 추가
+          </button>
+          <button class="function_button">
+            <i class="fi fi-sr-users-medical"></i> 그룹 만들기
+          </button>
+        </nav>
+        <div class="pili">
+          <button class="pili_list">가가가</button>
+          <button class="pili_list">나나나</button>
+          <button class="pili_list">다다다</button>
+          <button class="pili_list">라라라</button>
+          <button class="pili_list">마마마</button>
+          <button class="pili_list">바바바</button>
+          <button class="pili_list">사사사</button>
+          <button class="pili_list">아아아</button>
+          <button class="pili_list">자자자</button>
+          <button class="pili_list">차차차</button>
+          <button class="pili_list">카카카</button>
+          <button class="pili_list">타타타</button>
+          <button class="pili_list">파파파</button>
+          <button class="pili_list">하하하</button>
+          <button class="pili_list">가가가</button>
+          <button class="pili_list">나나나</button>
+          <button class="pili_list">다다다</button>
+          <button class="pili_list">라라라</button>
+          <button class="pili_list">마마마</button>
+          <button class="pili_list">바바바</button>
+          <button class="pili_list">사사사</button>
+          <button class="pili_list">아아아</button>
+          <button class="pili_list">자자자</button>
+          <button class="pili_list">차차차</button>
+          <button class="pili_list">카카카</button>
+          <button class="pili_list">타타타</button>
+          <button class="pili_list">파파파</button>
+          <button class="pili_list">하하하</button>
+        </div>
+      </div>
+      <div id="blindProfile">
+        <p class="profile_title">프로필</p>
+        <div></div>
+      </div>
+      <div id="blindMenu_Burger">
+        <p>더보기</p>
+      </div>
+    </main>
+    <footer>
       <div>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>운동 시설 추천</p>
-              <img src="../IMG/free-icon-gym-2801710.png">
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>REPLAY 분석</p>
-              <img src="../IMG/free-icon-var-replay-7807588.png">
-            </div>
-          </div>
-        </a>
+        <nav class="SNS_nav">
+          <a href="#"><i class="fi fi-brands-twitter"></i></a>
+          <a href="#"><i class="fi fi-brands-youtube"></i></a>
+          <a href="#"><i class="fi fi-brands-instagram"></i></a>
+          <a href=""><i class="fi fi-brands-facebook"></i></a>
+        </nav>
+        <nav class="policy_nav">
+          <a href="#">이용약관</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">고객센터</a>
+          <a href="#">FAQ</a>
+        </nav>
+        <p>Copyright © 2026 POSEFIX All rights reserved.</p>
       </div>
-      <div>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>외부 기기 연동</p>
-              <img src="../IMG/free-icon-data-synchronization-7440391.png">
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>배틀 모드</p>
-              <img src="../IMG/free-icon-versus-7960348.png">
-            </div>
-          </div>
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>성장 리포트</p>
-              <img src="../IMG/free-icon-data-report-2763407.png">
-            </div>
-          </div>
-        </a>
-        <a href="#">
-          <div class="function_menu_list">
-            <div>
-              <p>프로모션</p>
-              <img src="../IMG/free-icon-coupon-8633496.png">
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="menu_bar">
-      <nav>
-        <button class="menu_bar_button" onclick="toggleBlind_chatting()"><i class="fi fi-sr-envelope"></i></button>
-        <button class="menu_bar_button" onclick="toggleBlind_setting()"><i class="fi fi-sr-settings"></i></button>
-        <button class="menu_bar_button" onclick="toggleBlind_home()"><i class="fi fi-sr-home"></i></button>
-        <button class="menu_bar_button" onclick="toggleBlind_profile()"><i class="fi fi-sr-user"></i></button>
-        <button class="menu_bar_button" onclick="toggleBlind_menu_burger()"><i class="fi fi-br-menu-burger"></i></button>
-      </nav> 
-    </div>
-    <div id="blindSetting">
-      <p class="setting_title">설정</p>
-      <div class="setting_list">
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">다크모드</p>
-              <p>눈의 피로도가 줄어듭니다.</p>
-            </div>
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">알림</p>
-              <p>POSEFIX의 소식을 실시간으로 알수 있습니다.</p>
-            </div>
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">텍스트 크기</p>
-              <p>텍스트의 크기를 조절해 줍니다.</p>
-            </div>
-            <input type="number" max="10" min="0" value="5" class="text_setting">
-          </div>
-        </div>
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">데이터 관리</p>
-              <p>캐시 삭제 및 클라우드를 동기화 합니다.</p>
-            </div>
-            <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
-          </div>
-        </div>
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">언어 설정</p>
-              <p>앱 언어를 변경합니다 (현재 : 한국어)</p>
-            </div>
-            <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
-          </div>
-        </div>
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">보안 설정</p>
-              <p>비밀번호 및 생체 인식 관리</p>
-            </div>
-            <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
-          </div>
-        </div>
-        <div>
-          <div class="setting_option">
-            <div>
-              <p class="setting_name">권한 설정</p>
-              <p>사용할수 있는 권한을 설정 합니다.</p>
-            </div>
-            <p class="setting_enter"><i class="fi fi-rr-angle-right"></i></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="blindChatting">
-      <p class="chatting_title">내부 메신저</p>
-      <nav>
-        <button class="function_button"><i class="fi fi-sr-user-add"></i> 연락처 추가</button>
-        <button class="function_button"><i class="fi fi-sr-users-medical"></i> 그룹 만들기</button>
-      </nav>
-      <div class="pili">
-        <button class="pili_list">가가가</button>
-        <button class="pili_list">나나나</button>
-        <button class="pili_list">다다다</button>
-        <button class="pili_list">라라라</button>
-        <button class="pili_list">마마마</button>
-        <button class="pili_list">바바바</button>
-        <button class="pili_list">사사사</button>
-        <button class="pili_list">아아아</button>
-        <button class="pili_list">자자자</button>
-        <button class="pili_list">차차차</button>
-        <button class="pili_list">카카카</button>
-        <button class="pili_list">타타타</button>
-        <button class="pili_list">파파파</button>
-        <button class="pili_list">하하하</button>
-        <button class="pili_list">가가가</button>
-        <button class="pili_list">나나나</button>
-        <button class="pili_list">다다다</button>
-        <button class="pili_list">라라라</button>
-        <button class="pili_list">마마마</button>
-        <button class="pili_list">바바바</button>
-        <button class="pili_list">사사사</button>
-        <button class="pili_list">아아아</button>
-        <button class="pili_list">자자자</button>
-        <button class="pili_list">차차차</button>
-        <button class="pili_list">카카카</button>
-        <button class="pili_list">타타타</button>
-        <button class="pili_list">파파파</button>
-        <button class="pili_list">하하하</button>
-      </div>
-    </div>
-    <div id="blindProfile">
-      <p class="profile_title">프로필</p>
-      <div>
-      </div>
-    </div>
-    <div id="blindMenu_Burger">
-      <p>더보기</p>
-    </div>
-  </main>
-  <footer>
-    <div>
-      <nav class="SNS_nav">
-        <a href="#"><i class="fi fi-brands-twitter"></i></a>
-        <a href="#"><i class="fi fi-brands-youtube"></i></a>
-        <a href="#"><i class="fi fi-brands-instagram"></i></a>
-        <a href=""><i class="fi fi-brands-facebook"></i></a>
-      </nav>
-      <nav class="policy_nav">
-        <a  href="#">이용약관</a>
-        <a href="#">개인정보처리방침</a>
-        <a href="#">고객센터</a>
-        <a href="#">FAQ</a>
-      </nav>
-      <p>Copyright © 2026 POSEFIX All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="../JS/POSEFIX-메인-홈페이지.js"></script>
-</body>
+    </footer>
+    <script src="../JS/POSEFIX-메인-홈페이지.js"></script>
+  </body>
+</html>

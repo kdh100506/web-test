@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Input Tag</legend>
+        <ul>
+          <li>
+            <label for="text">text</label>
+            <input type="text" id="text" required />
+            <!--required는 필수 값-->
+          </li>
+          <li>
+            <label for="password">password</label>
+            <input type="password" id="password" />
+          </li>
+          <li>
+            <label for="email">email</label>
+            <input type="email" id="email" />
+          </li>
+          <li>
+            <label for="tel">tel</label>
+            <input type="tel" id="tel" />
+          </li>
+          <li>
+            <label for="url">url</label>
+            <input type="url" id="url   " />
+          </li>
+          <li>
+            <label for="number">number</label>
+            <input type="number" id="number" min="0" max="10" />
+            <!--min은 최솟값, max는 최댓값-->
+          </li>
+          <li>
+            <label for="range">range</label>
+            <input type="range" id="range" />
+          </li>
+        </ul>
+        <input type="submit" value="submit" />
+      </fieldset>
+      <fieldset>
+        <legend>날짜 관련</legend>
+        <ul>
+          <li>
+            <label id="date">date</label>
+            <input type="date" id="date" min="2021-07-10" max="2021-07-15" />
+            <!--min은 최솟값, max는 최댓값 날짜도 동일함-->
+          </li>
+          <li>
+            <label id="month">month</label>
+            <input type="month" id="month" />
+          </li>
+          <li>
+            <label id="week">week</label>
+            <input type="week" id="week" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>시간 관련</legend>
+        <ul>
+          <li>
+            <label id="time">time</label>
+            <input type="time" id="time" min="16:00" max="18:00" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>그 외</legend>
+        <ul>
+          <li>
+            <label id="file">file</label>
+            <input type="file" id="file" multiple />
+            <!--multiple은 파일이 여러개 선택 가능하게 함-->
+          </li>
+          <li>
+            <input type="hidden" name="hidden" value="hidden" />
+            <!--보통 name, value사용-->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>form 데이터 속성</legend>
+        <ul>
+          <li>
+            <label for="required">required</label>
+            <input type="text" id="required" required />
+            <!--required: 필수값-->
+          </li>
+          <li>
+            <label for="readonly">readonly</label>
+            <input type="text" id="readonly" readonly />
+            <!--readonly: 일기전용-->
+          </li>
+          <li>
+            <label for="disabled">disabled</label>
+            <input type="text" id="disabled" disabled />
+            <!--disabled: 비활성화(서버 전송X)-->
+          </li>
+          <li>
+            <label for="autofocus">autofocus</label>
+            <input type="text" id="autofocus" autofocus />
+            <!--autofocus: 초기에 해당 필드에 커서 위치-->
+          </li>
+          <li>
+            <label for="placeholder">placeholder</label>
+            <input type="text" id="placeholder" placeholder="placeholder" />
+            <!--placeholder: 가이드 문구-->
+          </li>
+        </ul>
+        <input type="submit" value="submit" />
+      </fieldset>
+      <fieldset>
+        <legend>선택/서답형 관련</legend>
+        <ul>
+          <li>
+            <label id="apple">apple</label>
+            <input type="checkbox" id="apple" value="apple" />
+            <!--value값이 서버로 전송-->
+          </li>
+          <li>
+            <label id="orange">orange</label>
+            <input type="checkbox" id="orange" value="orange" />
+          </li>
+          <li>
+            <label id="banana">banana</label>
+            <input type="checkbox" id="banana" value="banana" />
+          </li>
+          <li>
+            <label id="strawberry">strawberry</label>
+            <input type="radio" name="fruit" id="strawberry" value="strawberry" />
+            <!--name으로 묶기(같은 값끼리 중복선택 X)-->
+          </li>
+          <li>
+            <label id="grape">grape</label>
+            <input type="radio" name="fruit" id="grape" value="grape" />
+          </li>
+          <li>
+            <label id="peach">peach</label>
+            <input type="radio" name="fruit" id="peach" value="peach" />
+          </li>
+          <li>
+            <textarea id="textarea" name="textarea" rows="5" cols="5"></textarea>
+            <!--rows: 화면에 표시되는 행수-->
+            <!--cols: 화면에 표시되는 칼럼수-->
+          </li>
+          <li>
+            <select>
+              <option value="op1">op1</option>
+              <option value="op2" selected>op2</option>
+              <!--selected: 기본 선택 값-->
+              <option value="op3">op3</option>
+            </select>
+          </li>
+          <li>
+            <select multiple>
+              <!--multiple: 값 중복 선택 가능 (형태가 달라짐)-->
+              <option value ="op1">op1</option>
+              <option value="op2" selected>op2</option>
+              <option value="op3">op3</option>
+            </select>
+          </li>
+          <li>
+            <label for="datalist">datalist</label>
+            <input list="datalist_list" id="datalist" name="datalist" />
+            <datalist id="datalist_list">
+              <!--input-list와 datalist-id의 값아 같아야함-->
+              <option>op1</option>
+              <option>op2</option>
+              <option>op3</option>
+              <option>op4</option>
+            </datalist>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: 1px solid #000000;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #000000;
+        padding: 12px;
+      }
+
+      .col {
+        width: 80px;
+        background-color: #ffd500;
+      }
+    </style>
+  </head>
+  <body>
+    <!--테이블 기본 태그-->
+
+    <table></table>
+    <!--표-->
+    <tr></tr>
+    <!--행-->
+    <th></th>
+    <!--제목 열-->
+    <td></td>
+    <!--열-->
+
+    <table>
+      <caption>
+        프로필 테이블
+      </caption>
+      <tr>
+        <th>이름</th>
+        <th>취미</th>
+        <th>특기</th>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td>취미</td>
+        <td>특기</td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td>취미</td>
+        <td>특기</td>
+      </tr>
+    </table>
+
+    <!--테이블 그룹 태그-->
+
+    <colgroup></colgroup>
+    <!--열을 그룹으로 묶음-->
+    <col />
+    <!--colgroup의 자식 태그, 열 단위를 나눔-->
+    <thead></thead>
+    <!--제목 열들을 묶음-->
+    <tbody></tbody>
+    <!--표의 내용을 묶음-->
+    <tfoot></tfoot>
+    <!--하단 영역을 묶음-->
+
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+      <colgroup>
+        <col />
+        <col class="col" />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>반</th>
+          <th>이름</th>
+          <th>국어</th>
+          <th>영어</th>
+          <th>수학</th>
+          <th>코딩</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">1</td>
+          <!--rowspan은 행 병합-->
+          <td>홍길동</td>
+          <td>90</td>
+          <td>80</td>
+          <td>70</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>전우치</td>
+          <td>60</td>
+          <td>70</td>
+          <td>80</td>
+          <td>90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>1</td>
+          <td>2명</td>
+          <td colspan="4">합계</td>
+          <!--colspan은 열 병합-->
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
