@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  padding: 20px 150px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+
+header img {
+  margin-right: 300px;
+}
+
+header .header_menu {
+  display: flex;
+}
+
+header .header_menu li {
+  display: inline-block;
+  margin: 10px;
+}
+
+header .header_menu li a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+header input {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.menu > ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu > ul > li {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e1e1e;
+  position: relative;
+}
+.menu > ul > li:hover {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2041d4;
+  border-bottom: 2px solid #2041d4;
+}
+
+.info {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  list-style: none;
+  background-color: #fafafa;
+  font-size: 15px;
+  width: 180px;
+}
+
+#sub_menu_background {
+  width: 100px;
+}
+
+.menu > ul:hover .info {
+  display: block;
+}
+
+.menu > ul > li > ul > li {
+  text-align: left;
+  padding: 15px 20px;
+  line-height: normal;
+  color: #1e1e1e;
+}

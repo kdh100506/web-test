@@ -1,0 +1,40 @@
+/* 1. 메뉴바 디자인 */
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* 2. 서브 메뉴판 초기 상태 (숨김) */
+.sub-menu-panel {
+  display: none; /* 평소에는 아예 안 보이게 */
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+/* 3. ⭐ 핵심: 메인 메뉴에 마우스 올렸을 때만 서브 메뉴판 표시 */
+.main-menu:hover + .sub-menu-panel {
+  display: block;
+}
+
+/* 서브 메뉴 내부 레이아웃 */
+.inner-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-content ul {
+  list-style: none;
+  padding: 0;
+}
